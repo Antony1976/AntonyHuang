@@ -1,9 +1,14 @@
 """Module providingFunction scraper web (ASP) content."""
+import os
 from selenium import webdriver
 # from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 
-browser = webdriver.Chrome('chromedriver')
+os_name = os.name
+if os_name=='posix':
+    browser = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
+else:
+    browser = webdriver.Chrome('chromedriver')
 browser.implicitly_wait(10)
 browser.get(
     'https://wms.firstbank.com.tw/w/wb/wb01.djhtm?a=jfh02-ja55&amp;openExternalBrowser=1')
