@@ -1,4 +1,5 @@
 """Module providingFunction scraper web (ASP) content."""
+
 import os
 from selenium import webdriver
 # from selenium.webdriver.common.by import By
@@ -8,10 +9,12 @@ options = webdriver.ChromeOptions()
 options.add_argument("headless")
 
 os_name = os.name
-if os_name=='posix':
-    browser = webdriver.Chrome(executable_path='/usr/lib/chromium-browser/chromedriver', chrome_options=options)
+if os_name == 'posix':
+    browser = webdriver.Chrome(
+        executable_path='/usr/lib/chromium-browser/chromedriver', chrome_options=options)
 else:
-    browser = webdriver.Chrome(executable_path='chromedriver', chrome_options=options)
+    browser = webdriver.Chrome(
+        executable_path='chromedriver', chrome_options=options)
 browser.implicitly_wait(10)
 browser.get(
     'https://wms.firstbank.com.tw/w/wb/wb01.djhtm?a=jfh02-ja55&amp;openExternalBrowser=1')
