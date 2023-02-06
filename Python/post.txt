@@ -78,7 +78,7 @@
   <script src="https://bdtag.firstbank.com.tw/jscollection/WebConnector-fund.js" type="text/javascript">
   </script>
  </head>
- <body>
+ <body class="bs-device-sm">
   <script src="/w/js/SU.js" type="text/javascript">
   </script>
   <div class="container-fluid" id="SysJustIFRAMEDIV">
@@ -126,11 +126,11 @@ function sOpenTradeRule(e, sFID, sType)
     <ul class="stockPanel nav nav-pills list">
      <li>
       <div>
-       最新淨值 (2022/12/29)
+       最新淨值 (2023/1/30)
       </div>
       <div>
        <strong>
-        72.99
+        81.34
        </strong>
        <em>
         美元
@@ -143,7 +143,7 @@ function sOpenTradeRule(e, sFID, sType)
       </div>
       <div>
        <span class="text-red">
-        740.25%
+        836.38%
        </span>
       </div>
      </li>
@@ -153,7 +153,7 @@ function sOpenTradeRule(e, sFID, sType)
       </div>
       <div>
        <span class="text-red">
-        13.13%
+        48.78%
        </span>
       </div>
      </li>
@@ -162,8 +162,8 @@ function sOpenTradeRule(e, sFID, sType)
        六個月績效
       </div>
       <div>
-       <span class="text-green">
-        -10.90%
+       <span class="text-red">
+        10.38%
        </span>
       </div>
      </li>
@@ -173,7 +173,7 @@ function sOpenTradeRule(e, sFID, sType)
       </div>
       <div>
        <span class="text-green">
-        -24.22%
+        -9.92%
        </span>
       </div>
      </li>
@@ -183,7 +183,7 @@ function sOpenTradeRule(e, sFID, sType)
       </div>
       <div>
        <span class="text-green">
-        -38.18%
+        -39.33%
        </span>
       </div>
      </li>
@@ -193,7 +193,7 @@ function sOpenTradeRule(e, sFID, sType)
       </div>
       <div>
        <span class="text-red">
-        0.02%
+        14.34%
        </span>
       </div>
      </li>
@@ -312,16 +312,16 @@ function sOpenTradeRule(e, sFID, sType)
         });
    </script>
    <div class="dj-pills">
-    <div class="scroller scroller-left">
+    <div class="scroller scroller-left disable" style="display: block; color: rgb(54, 54, 54);">
      <i class="glyphicon glyphicon-chevron-up">
      </i>
     </div>
-    <div class="scroller scroller-right">
+    <div class="scroller scroller-right" style="display: block; color: rgb(49, 49, 49);">
      <i class="glyphicon glyphicon-chevron-down">
      </i>
     </div>
     <div class="pills-wrapper">
-     <ul class="nav nav-pills list">
+     <ul class="nav nav-pills list" style="top: 0px;">
       <li class="active">
        <a href="/w/wb/wb01.djhtm?a=JFH02-JA55 ">
         基本資料
@@ -378,7 +378,7 @@ function sOpenTradeRule(e, sFID, sType)
        </span>
       </button>
       <a class="navbar-brand" href="/w/wb/wb02.djhtm?a=JFH02-JA55">
-       72.9900
+       81.3400
        <span class="glyphicon glyphicon-circle-arrow-down neg-number">
        </span>
       </a>
@@ -1671,7 +1671,7 @@ function sOpenTradeRule(e, sFID, sType)
        基金規模
       </th>
       <td class="text-left">
-       4122 百萬美元(2022/10/31)
+       5224 百萬美元(2022/11/30)
       </td>
       <th class="text-center text-nowrap">
        計價幣別
@@ -1805,7 +1805,7 @@ function sOpenTradeRule(e, sFID, sType)
         一般資訊
        </a>
        ) /
-       <a href="https://fundreport.moneydj.com/GetFundMonthReport1.asp?A=JFH02&amp;b=37743&amp;c=578" rel="noopener noreferrer" target="_blank">
+       <a href="https://fundreport.moneydj.com/GetFundMonthReport1.asp?A=JFH02&amp;b=61766&amp;c=580" rel="noopener noreferrer" target="_blank">
         基金月報
        </a>
        /
@@ -2163,5 +2163,7 @@ function sOpenTradeRule(e, sFID, sType)
     </div>
    </div>
   </div>
+  <script src="https://bdtag.firstbank.com.tw/webads/pageTag?AQB=1&amp;Log=1&amp;rsid=FCB-PROD&amp;ts=s74824637287369&amp;t=31%2F0%2F2023%2017%3A12%3A27%202%20-480&amp;ce=UTF-8&amp;ns=FCB&amp;pageName=wms.firstbank.com.tw%2Fw%2Fwb%2Fwb01.djhtm&amp;g=https%3A%2F%2Fwms.firstbank.com.tw%2Fw%2Fwb%2Fwb01.djhtm%3Fa%3Djfh02-ja55%26amp%3BopenExternalBrowser%3D1&amp;s=800x600&amp;c=24&amp;j=1.6&amp;v=N&amp;k=N&amp;bw=800&amp;bh=600&amp;AQE=1&amp;ok=Y&amp;PG_PATH=w%2Fwb%2Fwb01.djhtm&amp;url=https%3A%2F%2Fwms.firstbank.com.tw%2Fw%2Fwb%2Fwb01.djhtm%3Fa%3Djfh02-ja55%26amp%3Bopenexternalbrowser%3D1&amp;cookie=_ga%3DGA1.3.311858512.1675156348%3B%20_gid%3DGA1.3.618817430.1675156348%3B%20_gat%3D1%3B%20v1st%3DA8691B18BBB741C&amp;PG_URL=https%3A%2F%2Fwms.firstbank.com.tw%2Fw%2Fwb%2Fwb01.djhtm%3Fa%3Djfh02-ja55%26amp%3BopenExternalBrowser%3D1&amp;PG_HOSTNAME=wms.firstbank.com.tw&amp;PG_QUERYSTRING=a%3Djfh02-ja55%26amp%3BopenExternalBrowser%3D1&amp;PG_REF=&amp;USERAGENT=Mozilla/5.0 (X11; CrOS aarch64 13597.84.0) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/104.0.5112.105 Safari/537.36&amp;PG_TITLE=海外基金-基本資料&amp;DV_BROWSER=Chrome%20104&amp;DV_SCREENSIZE=800x600&amp;DV_OS=Linux%20-&amp;SESSION_NO=A8691B18BBB741C&amp;BDCN=" type="text/javascript">
+  </script>
  </body>
 </html>
