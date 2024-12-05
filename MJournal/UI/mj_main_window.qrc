@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>images/today.png</file>
+    <file>images/cal.png</file>
+    <file>images/printer.png</file>
+  </qresource>
+  <qresource prefix="logo">
+    <file>images/statistics.png</file>
+    <file>images/bank.png</file>
+  </qresource>
+</RCC>
