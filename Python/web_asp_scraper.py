@@ -5,17 +5,17 @@ from selenium import webdriver
 # from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 
-options = webdriver.ChromeOptions()
-options.add_argument("headless")
+chrome_options = webdriver.ChromeOptions()
+# chrome_options.add_argument("--window-position=-2400,-2400")
+chrome_options.add_argument("--headless=old")
 
 os_name = os.name
 if os_name == 'posix':
     browser = webdriver.Chrome(
-        executable_path='/usr/lib/chromium-browser/chromedriver', chrome_options=options)
+        executable_path='/usr/lib/chromium-browser/chromedriver', options=chrome_options)
 else:
-    browser = webdriver.Chrome(
-        executable_path='chromedriver', chrome_options=options)
-browser.implicitly_wait(10)
+    browser = webdriver.Chrome(options=chrome_options)
+# browser.implicitly_wait(10)
 browser.get(
     'https://wms.firstbank.com.tw/w/wb/wb01.djhtm?a=jfh02-ja55&amp;openExternalBrowser=1')
 print(browser.title)
