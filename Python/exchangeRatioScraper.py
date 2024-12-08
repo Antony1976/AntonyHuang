@@ -12,5 +12,6 @@ currency = df.iloc[:, :5]
 currency.columns = [u"幣別", u"現金匯率-本行買入",
                     u"現金匯率-本行賣出", u"即期匯率-本行買入", u"即期匯率-本行賣出"]
 # 修正’幣別’欄位
-currency[u"幣別"] = currency[u"幣別"].str.extract("\((\w+)\)")
+currency[u"幣別"] = currency[u"幣別"].str.extract("([\u4e00-\u9fa5]+[\u4e00-\u9fa5]+ \(+[A-z]+\))")
 print(currency)
+currency.to_excel("Exchange Rate.xlsx")
