@@ -1,8 +1,16 @@
 import pandas as pd
 import requests
-import time
 import json
+import openpyxl
+import re
 
+# 判斷是否維中文字串
+def IsChinese(contents):
+  zhPattern =re.compile(u'[\u4e00-\u9fa5]+')
+  if zhPattern.search(contents):
+    return True
+  else:
+    return False
 
 # 打算要取得的股票代碼
 stock_list_tse = ['2330', '2454', '3034', '2379', '2498']
@@ -40,7 +48,7 @@ df.columns = ['股票代號','公司簡稱','成交價','成交量','累積成�
 # 清除(缺失值)多餘行並顯示股票資訊
 # df.to_excel('Stocks Price 1.xlsx' , index=False )
 # df = df.dropna(axis=0)
-print(df['成交價'].describe())
+# print(df['成交價'].describe())
 
 # 自行新增漲跌百分比欄位
 df.insert(9, "漲跌百分比", 0.0)
@@ -73,6 +81,34 @@ def time2str(t):
 # 把API回傳的秒數時間轉成容易閱讀的格式
 df['資料更新時間'] = df['資料更新時間'].apply(time2str)
 """
+# 將結果存成Excel file
+df.to_excel('Stocks Price.xlsx',sheet_name='Stocks Price', index=False)
+
+# 自動調整Excel欄寬
+wb = openpyxl.load_workbook('Stocks Price.xlsx')
+ws = wb['Stocks Price']
+
+
+for col in ws.columns:
+  maxLen = 0
+  column = col[0].column_letter
+  for cell in col:
+    if IsChinese(str(cell.value)):
+      curLen = len(str(cell.value)) * 5
+      #print('find chinese', cell, curLen, maxLen)
+    else:
+      curLen = len(str(cell.value))
+
+    if curLen > maxLen:
+      maxLen = curLen
+
+    set_col_width = maxLen + 2
+
+  ws.column_dimensions[column].width = set_col_width
+
+
+wb.save('Stocks Price.xlsx')
+wb.close()
 # 顯示股票資訊
-df.to_excel('Stocks Price.xlsx', index=False)
 print(df)
+
