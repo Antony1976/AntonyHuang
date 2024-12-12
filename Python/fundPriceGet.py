@@ -20,7 +20,7 @@ for fund in fund_list:
     print(query_url)
 
     browser.get(query_url)
-    browser.implicitly_wait(5)
+    browser.implicitly_wait(10)
     html_doc = browser.page_source
     # print(html_doc)
     soup = BeautifulSoup(html_doc, 'lxml')
