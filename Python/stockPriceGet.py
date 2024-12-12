@@ -15,12 +15,12 @@ def IsChinese(contents):
 # 打算要取得的股票代碼
 stock_list_tse = ['2330', '2454', '3034', '2379', '2498']
 stock_etf_list_tse = ['0050', '0056', '0061', '00713', '00915', '00919']
-bond_etf_list_tse = ['00725B', '00751B', '00761B', '00772B']
+bond_etf_list_otc = ['00725B', '00751B', '00761B', '00772B']
 
 # 組合API需要的股票清單字串
 stock_list1 = '|'.join('tse_{}.tw'.format(stock) for stock in stock_list_tse)
 stock_etf_list1 = '|'.join('tse_{}.tw'.format(stock_etf) for stock_etf in stock_etf_list_tse)
-bond_etf_list1 = '|'.join('otc_{}.tw'.format(bond_etf) for bond_etf in bond_etf_list_tse)
+bond_etf_list1 = '|'.join('otc_{}.tw'.format(bond_etf) for bond_etf in bond_etf_list_otc)
 
 #　組合完整的URL
 stock_list = stock_list1 + '|' + stock_etf_list1 + '|' + bond_etf_list1
