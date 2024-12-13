@@ -37,8 +37,8 @@ for fund in fund_list:
 
     fund_data[idx][0] = fund_list[idx]
     fund_data[idx][1] = fund_name[0]
-    fund_data[idx][2] = price_data[1]
-    fund_data[idx][3] = price_data[2]
+    fund_data[idx][2] = price_data[2]
+    fund_data[idx][3] = price_data[1]
     fund_data[idx][4] = float(price_data[2])-float(price_data[4])
     fund_data[idx][5] = (float(price_data[2])-float(price_data[4]))/float(price_data[4])
     idx = idx + 1
